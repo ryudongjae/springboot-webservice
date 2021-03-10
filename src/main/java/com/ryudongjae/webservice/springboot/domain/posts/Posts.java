@@ -13,7 +13,8 @@ public class Posts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
+
 
     @Column(length = 500,nullable = false)
     private String title;
@@ -24,10 +25,14 @@ public class Posts {
     private String auther;
 
     @Builder
-    public Posts(String title,String content,String auther){
+    public Posts(String title, String content, String auther){
         this.title = title;
         this.content = content;
         this.auther = auther;
 
+    }
+    public void update(String title,String content){
+        this.title =title;
+        this.content = content;
     }
 }
