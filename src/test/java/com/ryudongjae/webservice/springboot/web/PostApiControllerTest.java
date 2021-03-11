@@ -56,4 +56,18 @@ public class PostApiControllerTest {
 
     }
 
+    @Test
+    public void Posts_수정된다()throws Exception{
+        //given
+        Posts savePosts = postsRepository.save(Posts.builder()
+                .title("title")
+                .content("content")
+                .auther("auther")
+                .build());
+
+        Long updatedId = savePosts.getId();
+        String expectedTitle ="title2";
+        String expectedContent ="content2";
+    }
+
 }
