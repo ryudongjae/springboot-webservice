@@ -62,7 +62,7 @@ public class PostApiControllerTest {
         Posts savePosts = postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
-                .auther("auther")
+                .auther("author")
                 .build());
 
         Long updatedId = savePosts.getId();
