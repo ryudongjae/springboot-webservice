@@ -35,7 +35,7 @@ public class PostsRepositoryTest {
         postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
-                .auther("rdj10149@gmail.com")
+                .author("rdj10149@gmail.com")
                 .build());
 
         //when
@@ -54,8 +54,8 @@ public class PostsRepositoryTest {
         LocalDateTime now = LocalDateTime.of(2020,03,17,0,0,0);
         postsRepository.save(Posts.builder()
                 .title("title")
-                .content("contnet")
-                .auther("auther")
+                .content("content")
+                .author("author")
                 .build());
 
         //when
