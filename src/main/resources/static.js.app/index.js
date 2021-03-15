@@ -1,4 +1,3 @@
-
 var main = {
    init : function () {
        var _this = this;
@@ -12,6 +11,7 @@ var main = {
            author : $("#author").val(),
            content : $("#content").val()
        };
+
        $.ajax({
            type : 'POST',
            url : '/api/v1/posts',
@@ -28,3 +28,4 @@ var main = {
 };
 
 main.init();
+
