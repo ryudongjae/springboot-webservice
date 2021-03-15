@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.ryudongjae'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '15'
+sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
